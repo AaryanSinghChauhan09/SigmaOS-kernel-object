@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-kernel-object"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS kernel-object component - kernel_subsystem"
+
+[lib]
+name = "kernel_object"
+path = "src/lib.rs"
