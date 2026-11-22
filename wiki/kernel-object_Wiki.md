@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-kernel-object Component Wiki
+# SigmaOS-kernel-object Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-kernel-object provides kernel object component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-kernel-object provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-kernel-object Abstraction
-- Fail-Fast on SigmaOS-kernel-object Initialization Errors
-- Deterministic SigmaOS-kernel-object Setup
-- Clear Abstraction Over SigmaOS-kernel-object APIs
-- Composition over Inheritance for SigmaOS-kernel-object extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-kernel-object Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-kernel-object Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-kernel-object Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-kernel-object APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-kernel-object extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-kernel-object follows a SigmaOS-kernel-object pattern:
+SigmaOS-kernel-object follows a SigmaOS-kernel-object pattern:
 - **SigmaOS-kernel-object Core**: Provides SigmaOS-kernel-object support, SigmaOS-kernel-object management, and SigmaOS-kernel-object tracking
 - **Management**: Supports SigmaOS-kernel-object management, SigmaOS-kernel-object configuration, and SigmaOS-kernel-object lifecycle
 - **Tracking**: Supports SigmaOS-kernel-object status, SigmaOS-kernel-object tracking, and SigmaOS-kernel-object lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-kernel-object follows a SigmaOS-kernel-object pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-kernel-object by given configuration
--  - Register a SigmaOS-kernel-object by given name
--  - Get SigmaOS-kernel-object status and SigmaOS-kernel-object availability
--  - Track SigmaOS-kernel-object management and SigmaOS-kernel-object tracking
+- Manage a SigmaOS-kernel-object by given configuration
+- Register a SigmaOS-kernel-object by given name
+- Get SigmaOS-kernel-object status and SigmaOS-kernel-object availability
+- Track SigmaOS-kernel-object management and SigmaOS-kernel-object tracking
 - Error types for SigmaOS-kernel-object failure scenarios or unsupported SigmaOS-kernel-object types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-kernel-object init, SigmaOS-kernel-object management)
 3. **Assert**: Verify the expected SigmaOS-kernel-object results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-kernel-object initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-kernel-object failure scenarios
 - Unit tests provided for SigmaOS-kernel-object management and configuration
